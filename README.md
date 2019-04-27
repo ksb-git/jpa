@@ -1,2 +1,3 @@
-# jpa
-jpa test repository
+# JPA
+
+JPA 학습용 
