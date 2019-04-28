@@ -11,7 +11,7 @@ spring:  profiles: local
     password: root
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:    hibernate:      #ddl-auto: validate
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true
     properties:
       hibernate:
