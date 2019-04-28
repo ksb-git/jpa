@@ -20,11 +20,13 @@ public class JpaRunner implements ApplicationRunner{
 	public void run(ApplicationArguments args) throws Exception {
 		// TODO Auto-generated method stub
 		
-		//01. 엔티티 매니저로 저장
+		//02. 세션으로 저장
 		Account account = new Account();
 		account.setUsername("keesun");
-		account.setPassword("jap");
-		entityManager.persist(account);
+		account.setPassword("hibernate");
+		
+		Session session = entityManager.unwrap(Session.class);
+		session.save(account);
 	}
 	
 }
