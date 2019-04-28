@@ -25,7 +25,7 @@ public class JpaRunner implements ApplicationRunner{
 		//01. 엔티티 매니저로 저장
 		//account.setUsername("keesun");
 		//account.setPassword("jap");
-		entityManager.persist(account);
+		//entityManager.persist(account);
 		
 		//02. 세션으로 저장
 		account.setUsername("keesun");
